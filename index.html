@@ -1,0 +1,2466 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AC AMC Dubai | AC Repair, Cleaning and Maintenance</title>
+  <meta name="description" content="AC AMC Dubai provides AC repair, duct cleaning, coil cleaning, servicing and maintenance solutions for homes and businesses across Dubai.">
+
+  <meta name="theme-color" content="#192A56">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy: #192A56;
+      --navy-dark: #101D3D;
+      --navy-light: #243967;
+      --blue: #0097E6;
+      --blue-light: #EAF7FF;
+      --white: #FFFFFF;
+      --off-white: #F5F8FC;
+      --text-dark: #17233F;
+      --text-muted: #65718A;
+      --border: #E3EAF2;
+      --radius: 18px;
+      --shadow: 0 18px 50px rgba(18, 42, 86, 0.09);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--text-dark);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      line-height: 1.15;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .container {
+      width: min(1180px, 90%);
+      margin: auto;
+    }
+
+    .section {
+      padding: 105px 0;
+      position: relative;
+    }
+
+    .section-dark {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .section-white {
+      background: var(--white);
+      color: var(--text-dark);
+    }
+
+    .section-soft {
+      background: var(--off-white);
+      color: var(--text-dark);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 25px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin-bottom: 48px;
+    }
+
+    .section-heading.center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section-heading.center .eyebrow {
+      justify-content: center;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(32px, 4vw, 48px);
+      letter-spacing: -1.8px;
+      margin-bottom: 17px;
+    }
+
+    .section-heading p {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 650px;
+    }
+
+    .section-dark .section-heading p {
+      color: rgba(255,255,255,.72);
+    }
+
+    .section-heading.center p {
+      margin: auto;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 23px;
+      border-radius: 7px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: #087FC0;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,151,230,.25);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,.5);
+      color: var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .btn-dark {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .btn-dark:hover {
+      background: var(--blue);
+      transform: translateY(-3px);
+    }
+
+    /* HEADER */
+
+    .topbar {
+      background: var(--navy-dark);
+      color: rgba(255,255,255,.82);
+      font-size: 11px;
+      padding: 9px 0;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .topbar a:hover {
+      color: var(--blue);
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      box-shadow: 0 5px 25px rgba(10,30,70,.07);
+    }
+
+    .nav-wrap {
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--navy);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.05;
+    }
+
+    .logo-symbol {
+      width: 43px;
+      height: 43px;
+      border-radius: 11px;
+      background: var(--navy);
+      display: grid;
+      place-items: center;
+      color: var(--white);
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .logo small {
+      display: block;
+      color: var(--blue);
+      font-family: 'Inter', sans-serif;
+      font-size: 9px;
+      letter-spacing: 2px;
+      margin-top: 5px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--navy);
+      font-size: 12px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-actions .btn {
+      padding: 12px 17px;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      background: var(--blue-light);
+      color: var(--navy);
+      border-radius: 8px;
+      font-size: 23px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+
+    .hero {
+      min-height: 690px;
+      background:
+        radial-gradient(circle at 80% 30%, rgba(0,151,230,.22), transparent 32%),
+        linear-gradient(120deg, #101D3D 0%, #192A56 55%, #203C70 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 50%;
+      right: -180px;
+      top: -130px;
+      box-shadow:
+        0 0 0 55px rgba(255,255,255,.025),
+        0 0 0 110px rgba(255,255,255,.02);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 65px;
+      position: relative;
+      z-index: 2;
+      padding: 85px 0;
+    }
+
+    .hero .eyebrow {
+      color: #6CCBFF;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 5.5vw, 68px);
+      letter-spacing: -3px;
+      margin-bottom: 25px;
+      max-width: 680px;
+    }
+
+    .hero h1 span {
+      color: #42B9FF;
+    }
+
+    .hero-description {
+      color: rgba(255,255,255,.76);
+      font-size: 15px;
+      max-width: 560px;
+      margin-bottom: 32px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .hero-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 23px;
+      margin-top: 40px;
+    }
+
+    .hero-point {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 11px;
+      color: rgba(255,255,255,.8);
+      font-weight: 600;
+    }
+
+    .hero-point span {
+      color: #50C3FF;
+      font-size: 16px;
+    }
+
+    /* HERO VISUAL - CSS BUILT */
+
+    .hero-visual {
+      min-height: 460px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    .visual-circle {
+      width: 390px;
+      height: 390px;
+      max-width: 100%;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.17);
+      background: radial-gradient(circle, rgba(0,151,230,.2), rgba(255,255,255,.025) 65%);
+      display: grid;
+      place-items: center;
+      position: relative;
+    }
+
+    .visual-circle::before,
+    .visual-circle::after {
+      content: "";
+      position: absolute;
+      border: 1px dashed rgba(255,255,255,.18);
+      border-radius: 50%;
+    }
+
+    .visual-circle::before {
+      inset: 30px;
+    }
+
+    .visual-circle::after {
+      inset: 65px;
+    }
+
+    .ac-unit {
+      width: 245px;
+      height: 145px;
+      border-radius: 17px;
+      background: linear-gradient(145deg, #FFFFFF, #D8E8F5);
+      box-shadow: 0 30px 60px rgba(0,0,0,.3);
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+      transform: rotate(-7deg);
+    }
+
+    .ac-unit-top {
+      height: 23px;
+      background: #D2E2EF;
+      border-bottom: 1px solid #C0D4E5;
+    }
+
+    .ac-display {
+      position: absolute;
+      top: 40px;
+      right: 25px;
+      width: 35px;
+      height: 13px;
+      border-radius: 3px;
+      background: #C6EFFF;
+    }
+
+    .ac-vent {
+      position: absolute;
+      bottom: 20px;
+      left: 22px;
+      right: 22px;
+      height: 20px;
+      background: repeating-linear-gradient(
+        to bottom,
+        #A5BDCF 0,
+        #A5BDCF 2px,
+        transparent 2px,
+        transparent 5px
+      );
+    }
+
+    .air-flow {
+      position: absolute;
+      bottom: -90px;
+      display: flex;
+      gap: 23px;
+      transform: rotate(10deg);
+    }
+
+    .air-flow span {
+      width: 5px;
+      height: 100px;
+      border-radius: 10px;
+      background: linear-gradient(to bottom, rgba(80,195,255,.8), transparent);
+      animation: air 2.5s ease-in-out infinite;
+    }
+
+    .air-flow span:nth-child(2) { animation-delay: .4s; }
+    .air-flow span:nth-child(3) { animation-delay: .8s; }
+    .air-flow span:nth-child(4) { animation-delay: 1.2s; }
+
+    @keyframes air {
+      0%,100% { opacity: .25; transform: translateY(-5px); }
+      50% { opacity: 1; transform: translateY(12px); }
+    }
+
+    .floating-card {
+      position: absolute;
+      z-index: 4;
+      background: var(--white);
+      color: var(--navy);
+      padding: 15px 18px;
+      border-radius: 12px;
+      box-shadow: 0 15px 40px rgba(0,0,0,.2);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .floating-card strong {
+      display: block;
+      font-size: 12px;
+    }
+
+    .floating-card small {
+      color: var(--text-muted);
+      font-size: 10px;
+    }
+
+    .floating-icon {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      border-radius: 9px;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-size: 19px;
+    }
+
+    .float-one {
+      top: 45px;
+      right: -5px;
+    }
+
+    .float-two {
+      bottom: 35px;
+      left: -15px;
+    }
+
+    /* TRUST STRIP */
+
+    .trust-strip {
+      background: var(--navy-dark);
+      color: var(--white);
+      padding: 25px 0;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .trust-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-right: 1px solid rgba(255,255,255,.14);
+    }
+
+    .trust-item:last-child {
+      border: 0;
+    }
+
+    .trust-icon {
+      color: #4DC0FF;
+      font-size: 22px;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 12px;
+    }
+
+    .trust-item small {
+      display: block;
+      color: rgba(255,255,255,.58);
+      font-size: 10px;
+    }
+
+    /* SERVICES - WHITE */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+      transition: .3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      right: -50px;
+      bottom: -50px;
+      border-radius: 50%;
+      background: var(--blue-light);
+      transition: .3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+      border-color: rgba(0,151,230,.35);
+    }
+
+    .service-card:hover::after {
+      transform: scale(1.8);
+    }
+
+    .service-icon {
+      width: 59px;
+      height: 59px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: var(--blue-light);
+      color: var(--blue);
+      margin-bottom: 24px;
+    }
+
+    .service-icon svg {
+      width: 29px;
+      height: 29px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      margin-bottom: 13px;
+      color: var(--navy);
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .service-link {
+      display: inline-flex;
+      gap: 8px;
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ABOUT - DARK */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .about-visual {
+      min-height: 440px;
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at 50% 40%, rgba(0,151,230,.28), transparent 55%),
+        linear-gradient(145deg, #243C70, #101D3D);
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .about-visual::before {
+      content: "";
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,.2);
+      position: absolute;
+      box-shadow: 0 0 0 35px rgba(255,255,255,.025), 0 0 0 75px rgba(255,255,255,.02);
+    }
+
+    .about-graphic {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .about-graphic .big-icon {
+      font-size: 100px;
+      color: #54C4FF;
+      line-height: 1;
+      text-shadow: 0 15px 40px rgba(0,151,230,.35);
+    }
+
+    .about-graphic h3 {
+      font-size: 22px;
+      margin-top: 18px;
+    }
+
+    .about-graphic p {
+      color: rgba(255,255,255,.6);
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-top: 8px;
+    }
+
+    .about-content h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      letter-spacing: -1.5px;
+      margin-bottom: 22px;
+    }
+
+    .about-content > p {
+      color: rgba(255,255,255,.7);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .about-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin: 28px 0 32px;
+    }
+
+    .about-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgba(255,255,255,.85);
+    }
+
+    .about-list span {
+      color: #4DC0FF;
+      font-size: 17px;
+    }
+
+    /* WHY CHOOSE US - WHITE */
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .benefit-card {
+      padding: 30px 24px;
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: var(--white);
+      transition: .25s;
+    }
+
+    .benefit-card:hover {
+      box-shadow: var(--shadow);
+      transform: translateY(-5px);
+    }
+
+    .benefit-number {
+      color: var(--blue);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 34px;
+      font-weight: 700;
+      opacity: .75;
+      margin-bottom: 20px;
+    }
+
+    .benefit-card h3 {
+      font-size: 17px;
+      color: var(--navy);
+      margin-bottom: 11px;
+    }
+
+    .benefit-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* TEAM - DARK */
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .team-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .team-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(0,151,230,.65);
+    }
+
+    .team-avatar {
+      height: 190px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 50% 35%, rgba(0,151,230,.35), transparent 50%),
+        linear-gradient(145deg, #263D70, #142449);
+      color: #7DD5FF;
+      font-size: 65px;
+    }
+
+    .team-info {
+      padding: 21px;
+    }
+
+    .team-info h3 {
+      font-size: 17px;
+      margin-bottom: 7px;
+    }
+
+    .team-info p {
+      color: #66C9FF;
+      font-size: 11px;
+    }
+
+    /* PROCESS - WHITE */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+      position: relative;
+    }
+
+    .process-card {
+      position: relative;
+      padding: 32px 23px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .process-number {
+      width: 54px;
+      height: 54px;
+      margin: 0 auto 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .process-card h3 {
+      color: var(--navy);
+      font-size: 17px;
+      margin-bottom: 10px;
+    }
+
+    .process-card p {
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    /* AMC - DARK */
+
+    .amc-box {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 40px;
+      align-items: center;
+      padding: 55px;
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at 80% 50%, rgba(0,151,230,.22), transparent 40%),
+        #101D3D;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+
+    .amc-box h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      margin-bottom: 17px;
+    }
+
+    .amc-box p {
+      color: rgba(255,255,255,.7);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    .amc-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .amc-feature {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: rgba(255,255,255,.85);
+      font-size: 12px;
+    }
+
+    .amc-feature span {
+      color: #55C5FF;
+      font-size: 17px;
+    }
+
+    .amc-side {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .amc-side .icon {
+      font-size: 55px;
+      color: #59C8FF;
+      margin-bottom: 12px;
+    }
+
+    .amc-side h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .amc-side p {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    /* TESTIMONIALS - WHITE */
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 30px;
+    }
+
+    .quote-mark {
+      color: var(--blue);
+      font-family: Georgia, serif;
+      font-size: 48px;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .testimonial-card h3 {
+      font-size: 17px;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .testimonial-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .testimonial-note {
+      margin-top: 25px;
+      font-size: 11px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* FAQ - WHITE */
+
+    .faq-wrap {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      margin-bottom: 13px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 24px;
+      border: 0;
+      background: transparent;
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 800;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    .faq-question span {
+      color: var(--blue);
+      font-size: 22px;
+      transition: .2s;
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 0 24px 22px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .faq-item.active .faq-question span {
+      transform: rotate(45deg);
+    }
+
+    /* CONTACT - DARK */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 60px;
+    }
+
+    .contact-content h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      margin-bottom: 20px;
+    }
+
+    .contact-content > p {
+      color: rgba(255,255,255,.68);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 23px;
+    }
+
+    .contact-detail-icon {
+      width: 43px;
+      height: 43px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      background: rgba(0,151,230,.15);
+      color: #56C5FF;
+      border-radius: 10px;
+      font-size: 19px;
+    }
+
+    .contact-detail strong {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .contact-detail p,
+    .contact-detail a {
+      font-size: 12px;
+      color: rgba(255,255,255,.67);
+    }
+
+    .contact-card {
+      background: var(--white);
+      color: var(--navy);
+      padding: 38px;
+      border-radius: 17px;
+    }
+
+    .contact-card h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card > p {
+      color: var(--text-muted);
+      font-size: 12px;
+      margin-bottom: 25px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      margin-bottom: 7px;
+      color: var(--navy);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      background: #FAFCFF;
+      border-radius: 7px;
+      font: inherit;
+      font-size: 12px;
+      outline: none;
+      color: var(--text-dark);
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(0,151,230,.1);
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contact-card .btn {
+      width: 100%;
+    }
+
+    .form-note {
+      color: var(--text-muted);
+      font-size: 10px;
+      margin-top: 12px;
+    }
+
+    /* FINAL CTA */
+
+    .final-cta {
+      background: var(--blue);
+      color: var(--white);
+      padding: 65px 0;
+    }
+
+    .final-cta-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .final-cta h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      margin-bottom: 10px;
+    }
+
+    .final-cta p {
+      color: rgba(255,255,255,.85);
+      font-size: 13px;
+    }
+
+    .final-cta .btn {
+      background: var(--white);
+      color: var(--navy);
+      flex-shrink: 0;
+    }
+
+    /* FOOTER */
+
+    .footer {
+      background: #0D1833;
+      color: var(--white);
+      padding: 75px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+      gap: 45px;
+      padding-bottom: 55px;
+    }
+
+    .footer .logo {
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+
+    .footer .logo-symbol {
+      background: var(--blue);
+    }
+
+    .footer-about {
+      color: rgba(255,255,255,.6);
+      font-size: 12px;
+      max-width: 300px;
+    }
+
+    .footer h3 {
+      font-size: 15px;
+      margin-bottom: 21px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a,
+    .footer-links p {
+      color: rgba(255,255,255,.62);
+      font-size: 11px;
+      transition: .2s;
+    }
+
+    .footer-links a:hover {
+      color: #58C7FF;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding-top: 23px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,.45);
+      font-size: 10px;
+    }
+
+    /* MOBILE ACTIONS */
+
+    .mobile-actions {
+      display: none;
+    }
+
+    /* ANIMATIONS */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1050px) {
+      .nav-links {
+        gap: 17px;
+      }
+
+      .nav-actions .btn {
+        font-size: 11px;
+      }
+
+      .hero-grid {
+        gap: 25px;
+      }
+
+      .benefits-grid,
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 800px) {
+      .section {
+        padding: 78px 0;
+      }
+
+      .topbar-inner {
+        justify-content: center;
+      }
+
+      .nav-wrap {
+        height: 72px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        box-shadow: 0 15px 25px rgba(0,0,0,.1);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 14px 0;
+      }
+
+      .nav-actions {
+        margin-left: auto;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        padding: 75px 0 65px;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .hero .eyebrow {
+        justify-content: center;
+      }
+
+      .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons,
+      .hero-points {
+        justify-content: center;
+      }
+
+      .hero-visual {
+        min-height: 400px;
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 25px;
+      }
+
+      .trust-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .services-grid,
+      .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .about-visual {
+        min-height: 350px;
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .amc-box {
+        grid-template-columns: 1fr;
+        padding: 35px;
+      }
+
+      .final-cta-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .container {
+        width: 90%;
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .section-heading {
+        margin-bottom: 35px;
+      }
+
+      .section-heading h2 {
+        font-size: 32px;
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        padding: 65px 0 45px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+        letter-spacing: -2px;
+      }
+
+      .hero-description {
+        font-size: 13px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .hero-points {
+        gap: 13px;
+      }
+
+      .hero-point {
+        font-size: 10px;
+      }
+
+      .hero-visual {
+        min-height: 340px;
+      }
+
+      .visual-circle {
+        width: 290px;
+        height: 290px;
+      }
+
+      .ac-unit {
+        width: 190px;
+        height: 115px;
+      }
+
+      .float-one {
+        right: -5px;
+        top: 10px;
+      }
+
+      .float-two {
+        left: -5px;
+        bottom: 5px;
+      }
+
+      .floating-card {
+        padding: 10px;
+      }
+
+      .floating-card strong {
+        font-size: 10px;
+      }
+
+      .floating-card small {
+        font-size: 9px;
+      }
+
+      .trust-grid {
+        gap: 20px 10px;
+      }
+
+      .trust-item {
+        justify-content: flex-start;
+        border: 0;
+      }
+
+      .trust-item strong {
+        font-size: 10px;
+      }
+
+      .trust-item small {
+        font-size: 9px;
+      }
+
+      .services-grid,
+      .testimonial-grid,
+      .benefits-grid,
+      .team-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 27px 23px;
+      }
+
+      .about-list {
+        grid-template-columns: 1fr;
+      }
+
+      .about-visual {
+        min-height: 300px;
+      }
+
+      .amc-box {
+        padding: 27px 21px;
+      }
+
+      .amc-features {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 27px 20px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .footer {
+        padding-top: 55px;
+        padding-bottom: 90px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .mobile-actions {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1001;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: var(--white);
+        box-shadow: 0 -5px 25px rgba(0,0,0,.12);
+      }
+
+      .mobile-actions a {
+        padding: 15px 10px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 800;
+        color: var(--white);
+        background: var(--navy);
+      }
+
+      .mobile-actions a:last-child {
+        background: var(--blue);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Professional AC Care Across Dubai</span>
+      <span>
+        <a href="tel:+97147065566">Call: 04 706 5566</a>
+        &nbsp; | &nbsp;
+        <a href="mailto:info@acamcdubai.com">info@acamcdubai.com</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav-wrap">
+
+      <a href="#home" class="logo">
+        <span class="logo-symbol">❄</span>
+        <span>
+          AC AMC
+          <small>DUBAI</small>
+        </span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#process">Our Process</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Book AC Service ↗</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO - DARK -->
+    <section class="hero section-dark" id="home">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <span class="eyebrow">AC Repair · Cleaning · Maintenance</span>
+
+          <h1>
+            Best AC Company Dubai for <span>Complete AC Care</span>
+          </h1>
+
+          <p class="hero-description">
+            Keep your indoor environment comfortable with professional air conditioning services. From AC repairs and duct cleaning to routine maintenance, our team provides solutions for residential and commercial requirements across Dubai.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Request a Service ↗</a>
+            <a href="tel:+97147065566" class="btn btn-outline">Call 04 706 5566</a>
+          </div>
+
+          <div class="hero-points">
+            <div class="hero-point"><span>✓</span> AC Cleaning</div>
+            <div class="hero-point"><span>✓</span> AC Repair</div>
+            <div class="hero-point"><span>✓</span> AC Maintenance</div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="visual-circle">
+            <div class="ac-unit">
+              <div class="ac-unit-top"></div>
+              <div class="ac-display"></div>
+              <div class="ac-vent"></div>
+            </div>
+
+            <div class="air-flow">
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="floating-card float-one">
+            <div class="floating-icon">❄</div>
+            <div>
+              <strong>Cooling Solutions</strong>
+              <small>Comfort-focused AC care</small>
+            </div>
+          </div>
+
+          <div class="floating-card float-two">
+            <div class="floating-icon">✓</div>
+            <div>
+              <strong>Professional Service</strong>
+              <small>Inspection and maintenance</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TRUST STRIP - DARK -->
+    <section class="trust-strip">
+      <div class="container trust-grid">
+
+        <div class="trust-item">
+          <span class="trust-icon">❄</span>
+          <div>
+            <strong>AC Maintenance</strong>
+            <small>Routine system care</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">⌁</span>
+          <div>
+            <strong>AC Duct Cleaning</strong>
+            <small>Cleaning solutions</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">⚙</span>
+          <div>
+            <strong>AC Repair</strong>
+            <small>Technical assistance</small>
+          </div>
+        </div>
+
+        <div class="trust-item">
+          <span class="trust-icon">✓</span>
+          <div>
+            <strong>Dubai Coverage</strong>
+            <small>Residential and commercial</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICES - WHITE -->
+    <section class="section section-white" id="services">
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <span class="eyebrow">What We Do</span>
+          <h2>Complete Air Conditioning Services</h2>
+          <p>
+            Explore our AC services designed to support cooling performance, system cleanliness and reliable operation for homes and businesses.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 5h18v10H3z"/>
+                <path d="M6 18h12M8 15v3m8-3v3"/>
+                <path d="M7 9h10M9 12h6"/>
+              </svg>
+            </div>
+            <h3>AC Duct Cleaning</h3>
+            <p>
+              Professional duct cleaning to help remove accumulated dust and unwanted particles from your air conditioning ductwork.
+            </p>
+            <a href="#contact" class="service-link">Enquire About Service →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="13" rx="2"/>
+                <path d="M7 9h10M7 12h10M8 18v2m8-2v2"/>
+              </svg>
+            </div>
+            <h3>AC Unit Cleaning</h3>
+            <p>
+              Cleaning of air conditioning units to support better system hygiene and help maintain their everyday operation.
+            </p>
+            <a href="#contact" class="service-link">Enquire About Service →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3v18M5 7l14 10M19 7L5 17"/>
+                <circle cx="12" cy="12" r="8"/>
+              </svg>
+            </div>
+            <h3>AC Coil Cleaning</h3>
+            <p>
+              Coil cleaning helps remove accumulated dirt from important AC components and supports effective heat exchange.
+            </p>
+            <a href="#contact" class="service-link">Enquire About Service →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="8"/>
+                <path d="M12 7v5l3 2"/>
+                <path d="M4 4l2 2m12-2-2 2"/>
+              </svg>
+            </div>
+            <h3>AC Maintenance</h3>
+            <p>
+              Planned maintenance support to help identify potential issues and keep your air conditioning system properly maintained.
+            </p>
+            <a href="#contact" class="service-link">Enquire About Service →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 7h16M4 12h16M4 17h16"/>
+                <circle cx="8" cy="7" r="2"/>
+                <circle cx="15" cy="12" r="2"/>
+                <circle cx="10" cy="17" r="2"/>
+              </svg>
+            </div>
+            <h3>AC Servicing</h3>
+            <p>
+              General AC servicing to help maintain system condition through inspection, cleaning and appropriate service tasks.
+            </p>
+            <a href="#contact" class="service-link">Enquire About Service →</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M14 6l4-4 4 4-4 4"/>
+                <path d="M18 6l-7 7"/>
+                <path d="M5 19l5-5"/>
+                <path d="M4 14l6 6"/>
+              </svg>
+            </div>
+            <h3>AC Repair</h3>
+            <p>
+              AC repair assistance for cooling and system-related issues, with inspection to help identify the required solution.
+            </p>
+            <a href="#contact" class="service-link">Enquire About Service →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT - DARK -->
+    <section class="section section-dark" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual reveal">
+          <div class="about-graphic">
+            <div class="big-icon">❄</div>
+            <h3>AC AMC Dubai</h3>
+            <p>COMPLETE AC CARE</p>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="eyebrow">About Our Company</span>
+          <h2>Supporting Comfortable Indoor Environments</h2>
+
+          <p>
+            AC AMC Dubai provides air conditioning services for customers looking for practical AC cleaning, maintenance and repair solutions.
+          </p>
+
+          <p>
+            Our services cover key parts of an air conditioning system, including ducts, coils, filters, indoor units and outdoor units. We work with residential and commercial requirements across Dubai.
+          </p>
+
+          <ul class="about-list">
+            <li><span>✓</span> AC system inspection</li>
+            <li><span>✓</span> Duct cleaning</li>
+            <li><span>✓</span> Coil cleaning</li>
+            <li><span>✓</span> AC repair assistance</li>
+            <li><span>✓</span> Routine maintenance</li>
+            <li><span>✓</span> Residential solutions</li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary">Speak With Our Team ↗</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US - WHITE -->
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Why Choose Us</span>
+          <h2>AC Care With a Practical Approach</h2>
+          <p>
+            A clear service process and the right maintenance approach can make managing your air conditioning requirements easier.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+
+          <article class="benefit-card reveal">
+            <div class="benefit-number">01</div>
+            <h3>Service Range</h3>
+            <p>Access AC cleaning, repair, servicing and maintenance through one service provider.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-number">02</div>
+            <h3>System-Focused Care</h3>
+            <p>Services address important AC components, from ducts and coils to indoor and outdoor units.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-number">03</div>
+            <h3>Clear Process</h3>
+            <p>Understand the service journey, from your initial enquiry to inspection and performance checks.</p>
+          </article>
+
+          <article class="benefit-card reveal">
+            <div class="benefit-number">04</div>
+            <h3>Dubai Coverage</h3>
+            <p>AC service solutions for residential and commercial requirements across Dubai.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM - DARK -->
+    <section class="section section-dark" id="team">
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Our Team</span>
+          <h2>Meet the People Behind the Service</h2>
+          <p>
+            Different technical responsibilities support the inspection, cleaning, maintenance and repair services offered by the company.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <article class="team-card reveal">
+            <div class="team-avatar">♙</div>
+            <div class="team-info">
+              <h3>Ali Hassan</h3>
+              <p>Senior AC Technician</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">♙</div>
+            <div class="team-info">
+              <h3>Fahad Khan</h3>
+              <p>HVAC Project Manager</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">♙</div>
+            <div class="team-info">
+              <h3>Jamal Ahmad</h3>
+              <p>Coil Cleaning Specialist</p>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">♙</div>
+            <div class="team-info">
+              <h3>Muhammad Ali</h3>
+              <p>AC Repair Mechanic</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS - WHITE -->
+    <section class="section section-white" id="process">
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <span class="eyebrow">How It Works</span>
+          <h2>A Straightforward AC Service Process</h2>
+          <p>
+            From your first enquiry to the final performance check, each step helps keep the service process clear.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <article class="process-card reveal">
+            <div class="process-number">01</div>
+            <h3>Book Service</h3>
+            <p>Contact the team and explain your AC service requirements.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <div class="process-number">02</div>
+            <h3>System Inspection</h3>
+            <p>Review the air conditioning system and identify the service requirements.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <div class="process-number">03</div>
+            <h3>Professional Service</h3>
+            <p>Carry out the agreed cleaning, maintenance or repair work.</p>
+          </article>
+
+          <article class="process-card reveal">
+            <div class="process-number">04</div>
+            <h3>Performance Check</h3>
+            <p>Check the system after the service has been completed.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AMC - DARK -->
+    <section class="section section-dark">
+      <div class="container">
+
+        <div class="amc-box reveal">
+
+          <div>
+            <span class="eyebrow">Annual Maintenance</span>
+            <h2>Plan Ahead With AC AMC Services</h2>
+
+            <p>
+              Regular air conditioning maintenance can help identify potential issues and support the ongoing care of your cooling system. Ask about Annual Maintenance Contract options for your home or villa.
+            </p>
+
+            <div class="amc-features">
+              <div class="amc-feature"><span>✓</span> Planned maintenance</div>
+              <div class="amc-feature"><span>✓</span> System inspection</div>
+              <div class="amc-feature"><span>✓</span> Home requirements</div>
+              <div class="amc-feature"><span>✓</span> Villa requirements</div>
+            </div>
+          </div>
+
+          <div class="amc-side">
+            <div class="icon">❄</div>
+            <h3>AC Maintenance Contract</h3>
+            <p>Discuss a maintenance arrangement that suits your property and AC requirements.</p>
+            <a href="#contact" class="btn btn-primary">Ask About AMC ↗</a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CUSTOMER VALUE - WHITE -->
+    <section class="section section-white">
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Customer Experience</span>
+          <h2>What Matters in AC Maintenance</h2>
+          <p>
+            When choosing an AC service provider, customers need clear information, suitable services and a straightforward way to get assistance.
+          </p>
+        </div>
+
+        <div class="testimonial-grid">
+
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <h3>Clear Service Information</h3>
+            <p>Understand the available AC services and identify the right option for your property's requirements.</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <h3>Practical Maintenance</h3>
+            <p>Discuss regular system care and maintenance options based on your air conditioning setup.</p>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="quote-mark">“</div>
+            <h3>Easy Communication</h3>
+            <p>Contact the team by phone or email to explain your requirements and request service information.</p>
+          </article>
+
+        </div>
+
+        <p class="testimonial-note">
+          These cards describe service priorities and are not presented as customer testimonials.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- FAQ - WHITE -->
+    <section class="section section-soft" id="faq">
+      <div class="container">
+
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Frequently Asked Questions</span>
+          <h2>Questions About AC Services in Dubai</h2>
+          <p>
+            Find answers to common questions about AC cleaning, servicing and maintenance.
+          </p>
+        </div>
+
+        <div class="faq-wrap">
+
+          <div class="faq-item active">
+            <button class="faq-question" aria-expanded="true">
+              How often should I service my AC?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              AC servicing is commonly recommended every 6 to 12 months, depending on system usage, property conditions and manufacturer guidance. Your specific requirements may vary.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you provide AC maintenance contracts?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              AC AMC options are available for residential properties, including homes and villas. Contact the team to discuss the available maintenance arrangements.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              What does AC cleaning include?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              AC cleaning requirements can include ducts, coils, filters, indoor units and outdoor units. The exact service depends on the system and the cleaning work required.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Do you provide AC services across Dubai?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              The company provides AC service solutions across Dubai. Contact the team to confirm availability for your location.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              Can I request AC repair and maintenance together?
+              <span>+</span>
+            </button>
+            <div class="faq-answer">
+              You can explain both requirements when contacting the team. The system can then be reviewed to identify the appropriate service work.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT - DARK -->
+    <section class="section section-dark" id="contact">
+      <div class="container contact-grid">
+
+        <div class="contact-content reveal">
+          <span class="eyebrow">Get In Touch</span>
+          <h2>Need Professional AC Assistance?</h2>
+
+          <p>
+            Contact AC AMC Dubai to discuss your AC repair, cleaning, servicing or maintenance requirements. The team can help you understand the available service options.
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">☎</div>
+            <div>
+              <strong>Phone Number</strong>
+              <a href="tel:+97147065566">04 706 5566</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">✉</div>
+            <div>
+              <strong>Email Address</strong>
+              <a href="mailto:info@acamcdubai.com">info@acamcdubai.com</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">⌖</div>
+            <div>
+              <strong>Location</strong>
+              <p>City Walk Building – 9 – City Walk – Al Wasl – Dubai</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">◷</div>
+            <div>
+              <strong>Opening Hours</strong>
+              <p>Monday – Friday, 9:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card reveal">
+          <h3>Request an AC Service</h3>
+          <p>Share your contact details and service requirements.</p>
+
+          <form id="enquiryForm">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your email address">
+            </div>
+
+            <div class="form-group">
+              <label for="service">Select a Service</label>
+              <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+                <option>AC Duct Cleaning</option>
+                <option>AC Unit Cleaning</option>
+                <option>AC Coil Cleaning</option>
+                <option>AC Maintenance</option>
+                <option>AC Servicing</option>
+                <option>AC Repair</option>
+                <option>Annual Maintenance Contract</option>
+                <option>Other Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your AC requirements"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Enquiry ↗</button>
+
+            <p class="form-note">
+              This concept form opens an email enquiry. Connect it to the company's preferred form or booking system before publishing.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FINAL CTA - BLUE -->
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+        <div>
+          <h2>Let's Take Care of Your AC System</h2>
+          <p>Speak with the team about AC cleaning, repair and maintenance in Dubai.</p>
+        </div>
+
+        <a href="tel:+97147065566" class="btn">Call 04 706 5566 ↗</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <a href="#home" class="logo">
+            <span class="logo-symbol">❄</span>
+            <span>
+              AC AMC
+              <small>DUBAI</small>
+            </span>
+          </a>
+
+          <p class="footer-about">
+            AC AMC Dubai provides air conditioning cleaning, repair, servicing and maintenance solutions for residential and commercial requirements across Dubai.
+          </p>
+        </div>
+
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Our Services</h3>
+          <ul class="footer-links">
+            <li><a href="#services">AC Duct Cleaning</a></li>
+            <li><a href="#services">AC Unit Cleaning</a></li>
+            <li><a href="#services">AC Coil Cleaning</a></li>
+            <li><a href="#services">AC Maintenance</a></li>
+            <li><a href="#services">AC Repair</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact Information</h3>
+          <ul class="footer-links">
+            <li><a href="tel:+97147065566">04 706 5566</a></li>
+            <li><a href="mailto:info@acamcdubai.com">info@acamcdubai.com</a></li>
+            <li><p>City Walk Building – 9 – City Walk – Al Wasl – Dubai</p></li>
+            <li><p>Monday – Friday: 9 AM – 10 PM</p></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> AC AMC Dubai. All rights reserved.</p>
+        <p>AC Repair · AC Cleaning · AC Maintenance</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE QUICK ACTIONS -->
+  <div class="mobile-actions">
+    <a href="tel:+97147065566">☎ Call Now</a>
+    <a href="#contact">Request Service ↗</a>
+  </div>
+
+  <script>
+    // MOBILE NAVIGATION
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', function () {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.textContent = isOpen ? '×' : '☰';
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      });
+    });
+
+    // FAQ ACCORDION
+    document.querySelectorAll('.faq-question').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const item = button.closest('.faq-item');
+        const isActive = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach(function (faq) {
+          faq.classList.remove('active');
+          faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    // REVEAL ON SCROLL
+    const revealElements = document.querySelectorAll('.reveal');
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealElements.forEach(function (element) {
+        observer.observe(element);
+      });
+    } else {
+      revealElements.forEach(function (element) {
+        element.classList.add('visible');
+      });
+    }
+
+    // FOOTER YEAR
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // ENQUIRY FORM
+    // Replace this email-based action with the company's actual booking
+    // or WordPress form integration before the website goes live.
+    const enquiryForm = document.getElementById('enquiryForm');
+
+    enquiryForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      if (!enquiryForm.reportValidity()) {
+        return;
+      }
+
+      const formData = new FormData(enquiryForm);
+
+      const name = formData.get('name');
+      const phone = formData.get('phone');
+      const email = formData.get('email');
+      const service = formData.get('service');
+      const message = formData.get('message');
+
+      const subject = encodeURIComponent('AC Service Enquiry - ' + service);
+
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Phone: ' + phone + '\n' +
+        'Email: ' + email + '\n' +
+        'Service: ' + service + '\n\n' +
+        'Message:\n' + message
+      );
+
+      window.location.href =
+        'mailto:info@acamcdubai.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+
+</body>
+</html>
